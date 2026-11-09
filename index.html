@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FlowRight Plumbing Co. - Plumber in Austin, TX | 24/7 Emergency, Drain Cleaning, Water Heaters</title>
+<meta name="description" content="FlowRight Plumbing Co., Austin TX. Licensed master plumbers: 24/7 emergency repairs, drain cleaning from $99, water heaters, leak repair and repiping. Upfront prices, no surprises. Call (512) 555-0147.">
+<style>
+  :root{
+    --navy:#0b2239; --navy2:#10304f; --navy3:#16406a;
+    --orange:#f2620f; --orange2:#ff7d2a; --red:#d92b1c;
+    --paper:#f4f6f8; --white:#fff; --ink:#16222e; --soft:#5a6b7a; --line:#dbe3ea;
+    --steel:#e8eef3;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{background:var(--paper);color:var(--ink);
+    font-family:"Arial Narrow",Arial,"Helvetica Neue",Helvetica,sans-serif;
+    line-height:1.6;-webkit-font-smoothing:antialiased}
+  h1,h2,h3{font-family:"Arial Black","Arial Narrow Bold",Arial,sans-serif;text-transform:uppercase;letter-spacing:.02em;line-height:1.12}
+  a{color:inherit}
+  .wrap{max-width:1120px;margin:0 auto;padding:0 22px}
+  .tag{display:inline-block;background:var(--orange);color:#fff;font-weight:700;font-size:12px;letter-spacing:.22em;text-transform:uppercase;padding:6px 14px;border-radius:3px}
+
+  /* emergency banner */
+  .emergency{background:var(--red);color:#fff;text-align:center;padding:11px 16px;font-weight:700;font-size:17px;letter-spacing:.03em}
+  .emergency a{color:#fff;text-decoration:underline;text-underline-offset:3px;font-size:19px;white-space:nowrap}
+  .emergency .pulse{display:inline-block;width:9px;height:9px;border-radius:50%;background:#fff;margin-right:9px;animation:pl 1.2s infinite}
+  @keyframes pl{0%,100%{opacity:1}50%{opacity:.25}}
+
+  /* nav */
+  header{position:sticky;top:0;z-index:60;background:var(--navy);border-bottom:4px solid var(--orange)}
+  .nav{display:flex;align-items:center;justify-content:space-between;height:72px;gap:16px}
+  .brand{color:#fff;text-decoration:none;font-family:"Arial Black",Arial,sans-serif;font-size:22px;text-transform:uppercase;line-height:1.05}
+  .brand span{color:var(--orange2)}
+  .brand small{display:block;font-family:Arial,sans-serif;font-size:10px;letter-spacing:.3em;color:#9db8cf;font-weight:700}
+  .links{display:flex;gap:26px;align-items:center}
+  .links a{color:#d6e2ec;text-decoration:none;font-weight:700;font-size:13px;letter-spacing:.14em;text-transform:uppercase}
+  .links a:hover{color:#fff}
+  .callbtn{background:var(--orange);color:#fff!important;padding:11px 18px;border-radius:4px}
+  .callbtn:hover{background:var(--orange2)}
+  @media(max-width:820px){.links a:not(.callbtn){display:none}}
+
+  /* hero */
+  .hero{background:linear-gradient(135deg,var(--navy) 55%,var(--navy3));color:#fff;padding:64px 0 56px;position:relative;overflow:hidden}
+  .hero:after{content:"";position:absolute;right:-70px;top:-70px;width:340px;height:340px;border:44px solid rgba(242,98,15,.18);border-radius:50%}
+  .hero h1{font-size:clamp(34px,5.4vw,58px);max-width:760px}
+  .hero h1 span{color:var(--orange2)}
+  .hero p{max-width:620px;color:#c8d7e4;font-size:18px;margin:18px 0 26px;font-family:Arial,sans-serif}
+  .trustrow{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:30px}
+  .trust{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.22);border-left:5px solid var(--orange);padding:10px 16px;font-weight:700;font-size:14px;letter-spacing:.04em}
+  .trust b{color:var(--orange2)}
+  .herobtns{display:flex;gap:14px;flex-wrap:wrap;position:relative;z-index:2}
+  .btn{display:inline-block;text-decoration:none;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:15px 28px;border-radius:4px;font-size:15px}
+  .btn-o{background:var(--orange);color:#fff}.btn-o:hover{background:var(--orange2)}
+  .btn-g{border:2px solid #fff;color:#fff}.btn-g:hover{background:rgba(255,255,255,.12)}
+
+  section{padding:62px 0}
+  .sec-head{margin-bottom:30px}
+  .sec-head h2{font-size:clamp(26px,3.6vw,38px);color:var(--navy)}
+  .sec-head p{color:var(--soft);max-width:640px;margin-top:8px;font-family:Arial,sans-serif}
+  .sec-head .tag{margin-bottom:12px}
+
+  /* services */
+  .svc-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:18px}
+  .svc{background:var(--white);border:1px solid var(--line);border-top:6px solid var(--navy);padding:24px;border-radius:4px}
+  .svc.hot{border-top-color:var(--orange)}
+  .svc h3{font-size:18px;color:var(--navy);margin-bottom:6px}
+  .svc p{color:var(--soft);font-size:15px;font-family:Arial,sans-serif}
+  .price{margin-top:14px;font-family:"Arial Black",Arial,sans-serif;color:var(--orange);font-size:20px}
+  .price small{font-family:Arial,sans-serif;color:var(--soft);font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase}
+  .note{margin-top:18px;background:var(--steel);border-left:6px solid var(--orange);padding:16px 20px;font-family:Arial,sans-serif;font-size:15px}
+
+  /* reviews */
+  .reviews{background:var(--navy);color:#fff}
+  .reviews .sec-head h2{color:#fff}
+  .ratingline{font-size:19px;font-weight:700;margin-bottom:26px}
+  .ratingline .stars{color:#ffb02e;letter-spacing:3px;font-size:22px}
+  .rev-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:18px}
+  .rev{background:var(--navy2);border:1px solid rgba(255,255,255,.14);padding:24px;border-radius:4px}
+  .rev .stars{color:#ffb02e;letter-spacing:2px}
+  .rev p{font-family:Arial,sans-serif;color:#d9e4ee;margin:10px 0 14px;font-size:15px}
+  .rev b{color:var(--orange2);font-size:14px;letter-spacing:.06em;text-transform:uppercase}
+
+  /* areas + info */
+  .two{display:grid;grid-template-columns:1.2fr .8fr;gap:26px}
+  @media(max-width:820px){.two{grid-template-columns:1fr}}
+  .panel{background:var(--white);border:1px solid var(--line);border-radius:4px;padding:28px}
+  .panel h3{color:var(--navy);font-size:20px;margin-bottom:16px}
+  .areas{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:8px 18px;font-family:Arial,sans-serif;font-size:15px}
+  .areas li:before{content:"▸ ";color:var(--orange);font-weight:900}
+  .info-line{font-family:Arial,sans-serif;font-size:15px;margin-bottom:14px}
+  .info-line b{display:block;color:var(--navy);text-transform:uppercase;font-size:12px;letter-spacing:.16em;margin-bottom:2px}
+  .info-line a{color:var(--orange);font-weight:700;text-decoration:none;font-size:19px}
+
+  /* form */
+  .formsec{background:var(--steel)}
+  form{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  @media(max-width:640px){form{grid-template-columns:1fr}}
+  label{font-family:Arial,sans-serif;font-size:13px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--navy);display:block;margin-bottom:6px}
+  input,select,textarea{width:100%;padding:13px;border:1px solid #b9c7d2;border-radius:4px;font-family:Arial,sans-serif;font-size:15px;background:#fff}
+  textarea{grid-column:1/-1;min-height:96px}
+  .full{grid-column:1/-1}
+  button.submit{background:var(--orange);color:#fff;border:none;padding:16px;font-family:"Arial Black",Arial,sans-serif;text-transform:uppercase;letter-spacing:.06em;font-size:16px;border-radius:4px;cursor:pointer;grid-column:1/-1}
+  button.submit:hover{background:var(--orange2)}
+  .formnote{grid-column:1/-1;font-family:Arial,sans-serif;font-size:13px;color:var(--soft);text-align:center}
+
+  footer{background:var(--navy);color:#a9bfd2;padding:44px 0 90px;font-family:Arial,sans-serif;font-size:14px}
+  footer .fbrand{color:#fff;font-family:"Arial Black",Arial,sans-serif;text-transform:uppercase;font-size:19px;margin-bottom:10px}
+  footer .fbrand span{color:var(--orange2)}
+  footer a{color:var(--orange2);font-weight:700;text-decoration:none}
+  .demoflag{margin-top:22px;border-top:1px solid rgba(255,255,255,.16);padding-top:18px;font-size:13px;color:#87a1b8}
+
+  /* sticky call */
+  .sticky-call{position:fixed;left:0;right:0;bottom:0;z-index:80;background:var(--orange);color:#fff;text-align:center;padding:14px;font-family:"Arial Black",Arial,sans-serif;text-transform:uppercase;letter-spacing:.05em;font-size:16px;text-decoration:none;box-shadow:0 -4px 18px rgba(0,0,0,.25)}
+</style>
+</head>
+<body>
+
+<div class="emergency"><span class="pulse"></span>24/7 EMERGENCY PLUMBER - pipe burst or flooding? <a href="tel:+15125550147">Call (512) 555-0147 now</a></div>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#">Flow<span>Right</span> Plumbing Co.<small>Licensed · Insured · Austin TX</small></a>
+    <nav class="links">
+      <a href="#services">Services</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#areas">Service Area</a>
+      <a href="#quote" class="callbtn">Get a Quote</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="wrap">
+    <span class="tag">Austin's Upfront-Price Plumbers</span>
+    <h1>Plumbing problems fixed <span>today</span> - at a price you approve first</h1>
+    <p>From burst pipes at 2am to a water heater that quit this morning, FlowRight's licensed master plumbers show up fast, quote the full job before work starts, and back every repair in writing.</p>
+    <div class="trustrow">
+      <div class="trust">TX Master Plumber Lic. <b>#M-42187</b></div>
+      <div class="trust">Fully <b>Licensed &amp; Insured</b></div>
+      <div class="trust"><b>4.9★</b> from 1,240+ Google reviews</div>
+      <div class="trust">Upfront <b>flat pricing</b></div>
+    </div>
+    <div class="herobtns">
+      <a class="btn btn-o" href="tel:+15125550147">Call (512) 555-0147</a>
+      <a class="btn btn-g" href="#quote">Request a Quote</a>
+    </div>
+  </div>
+</div>
+
+<section id="services">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="tag">Services &amp; Prices</span>
+      <h2>What we fix, and what it starts at</h2>
+      <p>Real starting prices for the Austin area. Your plumber confirms the exact flat price on site before any work begins - the price we quote is the price you pay.</p>
+    </div>
+    <div class="svc-grid">
+      <div class="svc hot"><h3>24/7 Emergency Call-Out</h3><p>Burst pipes, major leaks, sewage backups and flooding. Trucks stocked and rolling across Austin day and night.</p><div class="price"><small>From</small> $89</div></div>
+      <div class="svc"><h3>Drain Cleaning</h3><p>Kitchen, bathroom and main-line drains cleared with professional augers and hydro-jetting for stubborn blockages.</p><div class="price"><small>From</small> $99</div></div>
+      <div class="svc"><h3>Leak Detection &amp; Repair</h3><p>Electronic leak detection finds hidden leaks without tearing up your home. Most repairs finished the same visit.</p><div class="price"><small>From</small> $145</div></div>
+      <div class="svc"><h3>Water Heater Install</h3><p>Standard tank water heaters supplied, fitted and hauled away, with new connections and a full safety check.</p><div class="price"><small>From</small> $1,150</div></div>
+      <div class="svc"><h3>Tankless Water Heaters</h3><p>Endless hot water and lower energy bills. Sizing, gas line work and installation handled by our own crew.</p><div class="price"><small>From</small> $2,400</div></div>
+      <div class="svc"><h3>Whole-Home Repiping</h3><p>Replace ageing galvanized or poly pipes with PEX or copper. Most homes done in 1-2 days, water back on nightly.</p><div class="price"><small>From</small> $4,500</div></div>
+      <div class="svc"><h3>Sewer Line Repair</h3><p>Camera inspection included. Trenchless options available for many homes, so your yard stays intact.</p><div class="price"><small>From</small> $1,800</div></div>
+      <div class="svc"><h3>Gas Line Work</h3><p>Licensed gas fitting: new lines, extensions and leak repairs, pressure-tested and permitted where required.</p><div class="price"><small>From</small> $350</div></div>
+      <div class="svc"><h3>Fixtures &amp; Faucets</h3><p>Faucets, toilets, showers and garbage disposals installed neatly, with old units removed and recycled.</p><div class="price"><small>From</small> $120</div></div>
+    </div>
+    <div class="note"><b>Our promise:</b> no hourly meters, no "we'll see" pricing. You approve one flat price before we pick up a wrench, and every repair carries a 2-year parts and labour warranty.</div>
+  </div>
+</section>
+
+<section class="reviews" id="reviews">
+  <div class="wrap">
+    <div class="sec-head"><span class="tag">Customer Reviews</span><h2>Austin homeowners call us back</h2></div>
+    <div class="ratingline"><span class="stars">★★★★★</span> 4.9 rating · 1,240+ verified Google reviews</div>
+    <div class="rev-grid">
+      <div class="rev"><div class="stars">★★★★★</div><p>"Pipe burst at midnight and they had a plumber at our door before 1am. Quoted the repair on the spot and stuck to it to the dollar."</p><b>Marcus T. - Circle C Ranch</b></div>
+      <div class="rev"><div class="stars">★★★★★</div><p>"They found a slab leak two other companies missed, fixed it in one day and left the place cleaner than they found it. Rare these days."</p><b>Priya S. - Round Rock</b></div>
+      <div class="rev"><div class="stars">★★★★★</div><p>"New tankless heater installed same week. Hot showers for a family of five and our gas bill actually dropped. Straightforward pricing, zero pressure."</p><b>Danielle W. - Mueller</b></div>
+    </div>
+  </div>
+</section>
+
+<section id="areas">
+  <div class="wrap">
+    <div class="sec-head"><span class="tag">Where We Work</span><h2>Serving greater Austin</h2></div>
+    <div class="two">
+      <div class="panel">
+        <h3>Service Area</h3>
+        <ul class="areas">
+          <li>Austin (all areas)</li><li>Round Rock</li><li>Pflugerville</li><li>Cedar Park</li>
+          <li>Leander</li><li>Georgetown</li><li>Lakeway</li><li>West Lake Hills</li>
+          <li>Mueller &amp; East Austin</li><li>Zilker &amp; South Lamar</li><li>Hutto</li><li>Manor</li>
+        </ul>
+      </div>
+      <div class="panel">
+        <h3>Visit or Call</h3>
+        <div class="info-line"><b>Phone - 24/7</b><a href="tel:+15125550147">(512) 555-0147</a></div>
+        <div class="info-line"><b>Workshop</b>4810 Burnet Rd, Austin, TX 78756</div>
+        <div class="info-line"><b>Hours</b>Emergency line: 24 hours, 7 days<br>Office: Mon-Sat, 7:00am - 7:00pm</div>
+        <div class="info-line"><b>Licence</b>Texas Master Plumber Lic. #M-42187 · Fully insured</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="formsec" id="quote">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="tag">Free Quote</span>
+      <h2>Tell us what's leaking, clogged or cold</h2>
+      <p>Send a few details and we will call you back with next steps and a price range. Urgent? Call instead - the emergency line is answered by a real person, 24/7.</p>
+    </div>
+    <form onsubmit="event.preventDefault();alert('Thanks! A FlowRight plumber will call you back shortly.');">
+      <div><label for="p-name">Your name</label><input id="p-name" type="text" placeholder="Full name" required></div>
+      <div><label for="p-phone">Phone</label><input id="p-phone" type="tel" placeholder="(512) 555-0000" required></div>
+      <div><label for="p-svc">What do you need?</label>
+        <select id="p-svc"><option>Emergency repair</option><option>Drain cleaning</option><option>Leak repair</option><option>Water heater</option><option>Repiping</option><option>Something else</option></select></div>
+      <div><label for="p-area">Your area</label><input id="p-area" type="text" placeholder="e.g. Round Rock"></div>
+      <textarea placeholder="Describe the problem - where it is, when it started, anything we should bring."></textarea>
+      <button class="submit" type="submit">Request My Free Quote</button>
+      <div class="formnote">No spam, no obligation. We reply during office hours, or right away for emergencies.</div>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="fbrand">Flow<span>Right</span> Plumbing Co.</div>
+    <p>4810 Burnet Rd, Austin, TX 78756 · <a href="tel:+15125550147">(512) 555-0147</a> · TX Master Plumber Lic. #M-42187</p>
+    <p style="margin-top:6px">Emergency plumbing, drains, water heaters and repiping across greater Austin.</p>
+    <div class="demoflag">
+      <p>Concept demo website designed by Azher for plumbing businesses. Not a real business.</p>
+      <p style="margin-top:4px">Designed by Azher · Malegaon, Maharashtra 423203, India</p>
+    </div>
+  </div>
+</footer>
+
+<a class="sticky-call" href="tel:+15125550147">☎ Tap to Call - (512) 555-0147</a>
+
+</body>
+</html>
